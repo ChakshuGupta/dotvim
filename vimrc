@@ -4,6 +4,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'NewProggie/NewProggie-Color-Scheme'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 nnoremap <Space> :
 set nu
@@ -39,6 +40,8 @@ let g:airline_theme='newproggie'
 
 "Theme
 colo newproggie
+"colorscheme molokai_dark
+syntax on
 
 "The following lines are courtesy praveenv253.
 "Enable characters to demarcate the kind of whitespace used.
@@ -67,6 +70,11 @@ nnoremap <C-Left>  <C-w><Left>
 nnoremap <C-Right> <C-w><Right>
 nnoremap <C-Up>    <C-w><Up>
 nnoremap <C-Down>  <C-w><Down>
+nnoremap <F4> <C-w>r
+nnoremap <S-Left> <C-w>>
+nnoremap <S-Right> <C-w><
+nnoremap <S-Up> <C-w>+
+nnoremap <S-Down> <C-w>-
 
 "For exceeding 120 characters in a line"
 if exists('+colorcolumn')
@@ -81,3 +89,6 @@ au BufNewFile *.cpp 0r ~/.vim/templates/template.cpp | let IndentStyle = "cpp"
 "Adding ctags related shortcuts"
 map <C-\> :tab split<Enter>:exec("tag ".expand("<cword>"))<Enter>
 map <C-]> :vsp <Enter>:exec("tag ".expand("<cword>"))<Enter>
+
+"Remove trailing spaces by clicking <F5>"
+:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//g <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
