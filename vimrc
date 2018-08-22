@@ -70,12 +70,17 @@ nnoremap <C-Left>  <C-w><Left>
 nnoremap <C-Right> <C-w><Right>
 nnoremap <C-Up>    <C-w><Up>
 nnoremap <C-Down>  <C-w><Down>
+"To Swap/ Rotate the windows in the split"
 nnoremap <F4> <C-w>r
+"To increase and decrease the width of the active split window"
 nnoremap <S-Left> <C-w>>
 nnoremap <S-Right> <C-w><
+"To increase and decrease the height of the active split window"
 nnoremap <S-Up> <C-w>-
 nnoremap <S-Down> <C-w>+
+"Max out the width of the current split"
 nnoremap <F6> <C-w><bar>
+"Normalize all split sizes, which is very handy when resizing terminal"
 nnoremap <S-F6> <C-w>=
 
 "For exceeding 120 characters in a line"
