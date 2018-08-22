@@ -73,8 +73,8 @@ nnoremap <C-Down>  <C-w><Down>
 nnoremap <F4> <C-w>r
 nnoremap <S-Left> <C-w>>
 nnoremap <S-Right> <C-w><
-nnoremap <S-Up> <C-w>+
-nnoremap <S-Down> <C-w>-
+nnoremap <S-Up> <C-w>-
+nnoremap <S-Down> <C-w>+
 
 "For exceeding 120 characters in a line"
 if exists('+colorcolumn')
