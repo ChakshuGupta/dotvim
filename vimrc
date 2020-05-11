@@ -3,7 +3,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'NewProggie/NewProggie-Color-Scheme'
 Plug 'flazz/vim-colorschemes'
 call plug#end()
 nnoremap <Space> :
@@ -36,7 +35,7 @@ set pastetoggle=<F2>
 
 "Airline stuff
 let g:airline_powerline_fonts = 1
-let g:airline_theme='newproggie'
+"let g:airline_theme='newproggie'
 
 "Theme
 colo newproggie
